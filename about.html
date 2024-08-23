@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics web</title>
+</head>
+<body>
+    <header>
+        <div class="div-header">
+                <h1 class="div-h1">WELCOME TO OUR ELECTRONICS SHOP</h1>
+                 <div onclick="cartToggle()">
+                    <div class="div-cart">
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                    <span id="cart-count">0</span>
+                    </div>
+                </div>
+                <div>
+                <a href="login.html"><input type="button" value="Login" class="div-input"></a>
+                </div>
+                <div>
+                <a href="register.html"><input type="button" value="Register" class="div-input"></a>
+                </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <div class="left-div-icon">
+                <h1>Electronic <span class="span-content">Shop</span></h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li class="main">
+                    <a href="#" class="category-div">Category</a>
+                <div class="dropdown-content">
+                    <a href="cameras.html">cameras</a>
+                    <a href="computers.html">computers</a>
+                    <a href="laptops.html">laptops</a>
+                    <a href="smartphones.html">smartphones</a>
+                    <a href="mouse.html">mouse</a>
+                </div>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="div-about-header">
+            <div class="about-content">
+                <h2>About Us</h2>
+            </div>
+            <div class="about-description">
+                <p></p>
+            </div>
+        </div>
+        <div class="about-main-content">
+            <div class="para-describe1">
+                <h2>Welcome To Our Website</h2>
+                <p>Discover the latest trends and innovations in technology, design and more. Our shop brings you the best quality products to help you stay ahead of the curve.</p>
+                <input type="button" value="learn more" class="learn-btn">
+            </div>
+            <div class="para-describe2">
+                <img src="images/about.jpg" alt="about us.jpg" class="about-img">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-top-content">
+                <div class="top">
+                    <h4>Electronic shop</h4>
+                </div>
+                <div class="top">
+                    <h4>Useful links</h4>
+                </div>
+                <div class="top">
+                    <h4>Our services</h4>
+                </div>
+                <div class="top">
+                    <h4>Our social media pages</h4>
+                </div>
+    
+            </div>
+        <div class="footer-bottom-content">
+            <div class="footer-content1">
+                <div>
+                <h5>samburu</h5>
+                <h5>mombasa</h5>
+                <h5>malindi</h5>
+                <h5>kwale</h5>
+                <h5>mariakani</h5>
+                </div>
+                
+            </div>
+            <div class="footer-content2">
+                <div>
+                    <h5 class="footer-links"><a href="index.html">Home</a></h5>
+                    <h5 class="footer-links"><a href="about.html">About</a></h5>
+                    <h5 class="footer-links"><a href="contact.html">Contact us</a></h5>
+                    <h5 class="footer-links"><a href="category.html">Services</a></h5>
+                    <h5 class="footer-links"><a href="index.html">Terms & Policy</a></h5>
+                </div>
+            </div>
+            <div class="footer-content3">
+                <h5>Computers</h5>
+                <h5>Mobile phones</h5>
+                <h5>Gaming laptops</h5>
+                <h5>Headphones</h5>
+                <h5>woofer</h5>
+    
+            </div>
+            <div class="footer-content4">
+                <div>
+                    <h5>We are availabe 24/7 in the following pages:</h5>
+                </div>
+                <div>
+                    <a href="www.facebbok.com" class="icon-div"><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href="www.twitter.com" class="icon-div"><i class="fa fa-twitter fa-2x"></i></a>
+                    <a href="www.linkedin.com" class="icon-div"><i class="fa fa-linkedin fa-2x"></i></a>
+                    <a href="www.instagram.com" class="icon-div"><i class="fa fa-instagram fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="rights">
+            <p><i class="fa fa-copyright"><span class="rights-reserved">2024 All Rights Reserved. Designed By Mohaa Dev</span></i></p>
+        </div>
+        </footer>
+    </body>
+    </html>

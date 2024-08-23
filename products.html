@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics web</title>
+</head>
+<body>
+    <header>
+        <div class="div-header">
+            
+                <h1 class="div-h1">WELCOME TO OUR ELECTRONICS SHOP</h1>
+                <div onclick="cartToggle()">
+                    <div class="div-cart">
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                    <span id="cart-count">0</span>
+                    </div>
+                </div>
+                <a href="login.html"><input type="button" value="Login" class="div-input"></a>
+                <a href="register.html"><input type="button" value="Register" class="div-input"></a>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <div class="left-div-icon">
+                <h1>Electronic <span class="span-content">Shop</span></h1>
+            </div>
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li class="main">
+                    <a href="#" class="category-div">Category</a>
+                <div class="dropdown-content">
+                    <a href="#cameras">cameras</a>
+                    <a href="#computers">computers</a>
+                    <a href="#laptops">laptops</a>
+                    <a href="#smartphones">smartphones</a>
+                    <a href="#mouse">mouse</a>
+                </div>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div>
+            <h2 class="product-div">OUR LATEST PRODUCTS</h2>
+        </div>
+        <div class="color"></div>
+        <div class="cart-layout" id="cart-layout" onclick="cartToggle()"></div>
+        <div class="cart" id="cart">
+            <h2>Your Cart Items</h2>
+            <ul id="cart-items"></ul>
+            <button onclick="clearCart()" class="clearcart-content">Clear Cart</button>
+        </div>
+        <!--cameras-->
+    <div id="cameras" class="main-content-camera">
+        <div class="div-camera">
+            <div class="div-content-camera">
+                <img src="images/img3.jpg" alt="camera" class="cam-width">
+                <div>
+                    <h3>Dual cam 1</h3>
+                    <h3>price <span>$200</span></h3>
+                    <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('Dual cam 1')">
+                </div>
+            </div>
+            <div class="div-content-camera">
+                <img src="images/img4.jpg" alt="camera" class="cam-width">
+                <div>
+                    <h3>Dual cam 2</h3>
+                    <h3>price <span>$300</span></h3>
+                    <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('Dual cam 2')">
+                </div>
+            </div>
+            <div class="div-content-camera">
+                <img src="images/img5.jpg" alt="camera" class="cam-width">
+                <div>
+                    <h3>Dual cam 3</h3>
+                    <h3>price <span>$350</span></h3>
+                    <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('Dual cam 3')">
+                </div>
+            </div>
+        </div>
+        <!---->
+        <div class="div-camera">
+            <div class="div-content-camera">
+                <img src="images/img6.jpg" alt="camera" class="cam-width">
+                <div>
+                    <h3>Dual cam 4</h3>
+                    <h3>price <span>$150</span></h3>
+                    <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('Dual cam 4')">
+                </div>
+            </div>
+            <div class="div-content-camera">
+                <img src="images/img7.jpg" alt="camera" class="cam-width">
+                <div>
+                    <h3>Dual cam 5</h3>
+                    <h3>price <span>$300</span></h3>
+                    <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('Dual cam 5')">
+                </div>
+            </div>
+            <div class="div-content-camera">
+                <img src="images/img8.jpg" alt="camera" class="cam-width">
+                <div>
+                    <h3>Dual cam 6</h3>
+                    <h3>price <span>$200</span></h3>
+                    <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('Dual cam 6')">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--computers-->
+    <div id="computers" class="main-content-computer">
+        <div class="div-computers">
+            <div class="div-content-computer">
+                <img src="images/comp1.jpg" alt="camera" class="comp-width">
+                    <div>
+                        <h3>HP DK 10</h3>
+                        <h3>price <span>$750</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('HP DK 10')">
+                    </div>
+            </div>
+            <div class="div-content-computer">
+                <img src="images/comp2.jpg" alt="camera" class="comp-width">
+                    <div>
+                        <h3>Dell 15</h3>
+                        <h3>price <span>$650</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('Dell 15')">
+                    </div>
+            </div>
+            <div class="div-content-computer">
+                <img src="images/comp3.jpg" alt="camera" class="comp-width">
+                    <div>
+                        <h3>HP DK 20</h3>
+                        <h3>price <span>$400</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('HP DK 20')">
+                    </div>
+            </div>
+        </div>
+        <!---->
+        <div class="div-computers">
+            <div class="div-content-computer">
+                <img src="images/comp4.jpg" alt="camera" class="comp-width">
+                    <div>
+                        <h3>Hp desktop 5</h3>
+                        <h3>price <span>$450</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('HP desktop5')">
+                    </div>
+            </div>
+            <div class="div-content-computer">
+                <img src="images/comp5.jpg" alt="camera" class="comp-width">
+                    <div>
+                        <h3>Huawei 11</h3>
+                        <h3>price <span>$600</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('Huawei 11')">
+                    </div>
+            </div>
+            <div class="div-content-computer">
+                <img src="images/comp6.jpg" alt="camera" class="comp-width">
+                    <div>
+                        <h3>Dell 11</h3>
+                        <h3>price <span>$500</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('Dell 07')">
+                    </div>
+            </div>
+        </div>
+
+    </div>
+    <!--laptops-->
+    <div id="laptops" class="main-content-laptop">
+        <div class="div-laptops">
+            <div class="div-content-laptop">
+                <img src="images/img10.jpg" alt="laptop" class="laptop-width">
+                    <div>
+                        <h3>Aseus</h3>
+                        <h3>price <span>$300</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('Aseus')">
+                    </div>
+            </div>
+            <div class="div-content-laptop">
+                <img src="images/img11.jpg" alt="laptop" class="laptop-width">
+                    <div>
+                        <h3>Lenovo</h3>
+                        <h3>price <span>$450</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('Lenovo')">
+                    </div>
+            </div>
+            <div class="div-content-laptop">
+                <img src="images/img12.jpg" alt="laptop" class="laptop-width">
+                    <div>
+                        <h3>HP pro</h3>
+                        <h3>price <span>$500</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('HP pro')">
+                    </div>
+            </div>
+        </div>
+        <!---->
+        <div class="div-laptops">
+            <div class="div-content-laptop">
+                <img src="images/img17.jpg" alt="laptop" clas="laptop-width">
+                    <div>
+                        <h3>Hp laptop12</h3>
+                        <h3>price <span>$650</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('Hp laptop12')">
+                    </div>
+            </div>
+            <div class="div-content-laptop">
+                <img src="images/img14.jpg" alt="laptop" class="laptop-width">
+                    <div>
+                        <h3>Hp elite</h3>
+                        <h3>price <span>$300</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('Hp elite')">
+                    </div>
+            </div>
+            <div class="div-content-laptop">
+                <img src="images/img15.jpg" alt="laptop" class="laptop-width">
+                    <div>
+                        <h3>Dell 5</h3>
+                        <h3>price <span>$450</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('Dell 5')">
+                    </div>
+            </div>
+        </div>
+
+    </div>
+    <!--smartphones-->
+    <div id="smartphones" class="main-content-smartphone">
+        <div class="div-smartphone">
+            <div class="div-content-smartphone">
+                <img src="images/camon20.jpg" alt="smartphone" class="smart-width">
+                    <div>
+                        <h3>cammon 20</h3>
+                        <h3>price <span>$120</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('camon20')">
+                    </div>
+            </div>
+            <div class="div-content-smartphone">
+                <img src="images/samA24.jpg" alt="smartphone" class="smart-width">
+                    <div>
+                        <h3>samsungA24</h3>
+                        <h3>price <span>$100</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('samsungA24')">
+                    </div>
+            </div>
+            <div class="div-content-smartphone">
+                <img src="images/itelP38.jpg" alt="smartphone" class="smart-width">
+                    <div>
+                        <h3>itelP38</h3>
+                        <h3>price <span>$150</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('itelP38')">
+                    </div>
+            </div>
+        </div>
+        <!---->
+        <div class="div-smartphone">
+            <div class="div-content-smartphone">
+                <img src="images/pop7.jpg" alt="smartphone" class="smart-width">
+                    <div>
+                        <h3>tecno pop7</h3>
+                        <h3>price <span>$100</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('tecnopop7')">
+                    </div>
+            </div>
+            <div class="div-content-smartphone">
+                <img src="images/samS21.jpg" alt="smartphone" class="smart-width">
+                    <div>
+                        <h3>samsungA21</h3>
+                        <h3>price <span>$120</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('samsungS21')">
+                    </div>
+            </div>
+            <div class="div-content-smartphone">
+                <img src="images/itelA49.jpg" alt="smartphone" class="smart-width">
+                    <div>
+                        <h3>itelA49</h3>
+                        <h3>price <span>$100</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('itelA49')">
+                    </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <div id="mouse" class="main-content-mouse">
+        <div class="div-mouse">
+            <div class="div-content-mouse">
+                <img src="images/M1.jpg" alt="mouse 1" class="mouse-width">
+                    <div>
+                        <h3>mouse 1</h3>
+                        <h3>price <span>$20</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('mouse 1')">
+                    </div>
+            </div>
+            <div class="div-content-mouse">
+                <img src="images/M2.jpg" alt="mouse 2" class="mouse-width">
+                    <div>
+                        <h3>mouse 2</h3>
+                        <h3>price <span>$20</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('mouse 2')">
+                    </div>
+            </div>
+            <div class="div-content-mouse">
+                <img src="images/M3.jpg" alt="mouse 3" class="mouse-width">
+                    <div>
+                        <h3>mouse 3</h3>
+                        <h3>price <span>$50</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('mouse 3')">
+                    </div>
+            </div>
+        </div>
+        <!---->
+        <div class="div-mouse">
+            <div class="div-content-mouse">
+                <img src="images/M4.jpg" alt="mouse 4" class="mouse-width">
+                    <div>
+                        <h3>mouse 4</h3>
+                        <h3>price <span>$30</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('mouse 4')">
+                    </div>
+            </div>
+            <div class="div-content-mouse">
+                <img src="images/M5.png" alt="mouse 5" class="mouse-width">
+                    <div>
+                        <h3>mouse 5</h3>
+                        <h3>price <span>$20</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('mouse 5')">
+                    </div>
+            </div>
+            <div class="div-content-mouse">
+                <img src="images/M6.jpg" alt="mouse 6" class="mouse-width">
+                    <div>
+                        <h3>mouse 6</h3>
+                        <h3>price <span>$40</span></h3>
+                        <input type="button" value="add to cart" class="btn-cart" onclick="addToCart('mouse 6')">
+                    </div>
+            </div>
+        </div>
+
+    </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-top-content">
+                <div class="top">
+                    <h4>Electronic shop</h4>
+                </div>
+                <div class="top">
+                    <h4>Useful links</h4>
+                </div>
+                <div class="top">
+                    <h4>Our services</h4>
+                </div>
+                <div class="top">
+                    <h4>Our social media pages</h4>
+                </div>
+    
+            </div>
+        <div class="footer-bottom-content">
+            <div class="footer-content1">
+                <div>
+                <h5>samburu</h5>
+                <h5>mombasa</h5>
+                <h5>malindi</h5>
+                <h5>kwale</h5>
+                <h5>mariakani</h5>
+                </div>
+                
+            </div>
+            <div class="footer-content2">
+                <div>
+                    <h5 class="footer-links"><a href="index.html">Home</a></h5>
+                    <h5 class="footer-links"><a href="about.html">About</a></h5>
+                    <h5 class="footer-links"><a href="contact.html">Contact us</a></h5>
+                    <h5 class="footer-links"><a href="category.html">Services</a></h5>
+                    <h5 class="footer-links"><a href="index.html">Terms & Policy</a></h5>
+                </div>
+            </div>
+            <div class="footer-content3">
+                <h5>Computers</h5>
+                <h5>Mobile phones</h5>
+                <h5>Gaming laptops</h5>
+                <h5>Headphones</h5>
+                <h5>woofer</h5>
+    
+            </div>
+            <div class="footer-content4">
+                <div>
+                    <h5>We are availabe 24/7 in the following pages:</h5>
+                </div>
+                <div>
+                    <a href="www.facebbok.com" class="icon-div"><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href="www.twitter.com" class="icon-div"><i class="fa fa-twitter fa-2x"></i></a>
+                    <a href="www.linkedin.com" class="icon-div"><i class="fa fa-linkedin fa-2x"></i></a>
+                    <a href="www.instagram.com" class="icon-div"><i class="fa fa-instagram fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="rights">
+            <p><i class="fa fa-copyright"><span class="rights-reserved">2024 All Rights Reserved. Designed By Mohaa Dev</span></i></p>
+        </div>
+        </footer>
+</body>
+</html>
