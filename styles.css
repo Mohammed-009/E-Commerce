@@ -2,6 +2,9 @@ body{
     box-sizing: border-box;
     margin-top: 0;
 }
+html, body{
+    overflow-x: hidden;
+}
 .div-header{
     display: flex;
     align-items: center;
