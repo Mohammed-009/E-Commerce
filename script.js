@@ -60,9 +60,7 @@ function validLogin() {
         alert("Fill out all the fields!");
         return false;
     }
-  else {
-     window.location = "index.html";
-  }
+window.location = "index.html";
 }
   
 
