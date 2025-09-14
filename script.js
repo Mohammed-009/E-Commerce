@@ -60,7 +60,11 @@ function validLogin() {
         alert("Fill out all the fields!");
         return false;
     }
+  else {
+     window.location = "index.html";
+  }
 }
+  
 
 function validateForm() {
     let username= document.electronicform.username.value;
@@ -80,6 +84,9 @@ function validateForm() {
         alert("password must be atleast six characters!");
         return false;
     }
+  else {
+     window.location = "login.html";
+  }
 
 
 }
