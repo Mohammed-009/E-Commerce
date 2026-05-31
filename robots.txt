@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Block sensitive pages (optional but recommended)
+Disallow: /login.html
+Disallow: /register.html
+Disallow: /forget%20password.html
+
+# Sitemap location
+Sitemap: https://e-commerce-2025-gules.vercel.app/sitemap.xml
